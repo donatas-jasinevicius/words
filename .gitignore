@@ -10,8 +10,8 @@
 !/backendvar/logs/.gitkeep
 !/backend/var/sessions
 /backend/var/sessions/*
-!/backendvar/sessions/.gitkeep
-!/backendvar/SymfonyRequirements.php
+!/backend/var/sessions/.gitkeep
+!/backend/var/SymfonyRequirements.php
 /backend/vendor/
 /backend/web/bundles/
 /backend/web/.htaccess
