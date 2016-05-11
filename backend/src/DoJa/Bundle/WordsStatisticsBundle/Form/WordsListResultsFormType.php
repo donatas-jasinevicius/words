@@ -19,6 +19,9 @@ class WordsListResultsFormType extends AbstractType
         $this->entityManager = $entityManager;
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $wordsListTransformer = new EntityToIdObjectTransformer($this->entityManager, "WordsBundle:WordsList");
@@ -32,6 +35,9 @@ class WordsListResultsFormType extends AbstractType
         ));
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(

@@ -9,7 +9,7 @@
         }])
         .config(['ngToastProvider', function(ngToastProvider) {
             ngToastProvider.configure({
-                animation: 'fade' // or 'fade'
+                animation: 'fade'
             });
         }])
         .constant('BASE_API_URL', '/backend/api/')

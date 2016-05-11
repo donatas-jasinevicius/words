@@ -8,7 +8,7 @@ use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\Util\Codes;
 use DoJa\Component\FOSRest\Exception\ApiException;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpKernel\Exception\HttpException;
+use Symfony\Component\HttpFoundation\Response;
 use DoJa\Bundle\WordsBundle\Entity\WordsList;
 use DoJa\Bundle\WordsBundle\Form\WordsListFormType;
 use DoJa\Bundle\WordsBundle\Service\WordsListManager;
@@ -29,30 +29,42 @@ class RestController extends FOSRestController
         $this->entityManager = $entityManager;
     }
 
-    public function getAllWordsAction(Request $request)
+    /**
+     * @return Response
+     */
+    public function getAllWordsAction()
     {
-        //todo check rights
         $wordsLists = $this->wordsListRepository->findAll();
 
         return $this->handleView($this->view($wordsLists, 200));
     }
 
-    public function getWordsAction(Request $request, $id)
+    /**
+     * @param $id
+     *
+     * @return Response
+     *
+     * @throws ApiException
+     */
+    public function getWordsAction($id)
     {
-        //todo check rights
         $wordsList = $this->wordsListRepository->find($id);
 
         if ($wordsList === null) {
             throw new ApiException(ApiException::NOT_FOUND);
         }
 
-        return $this->handleView($this->view($wordsList, 200));
+        return $this->handleView($this->view($wordsList));
     }
 
+    /**
+     *
+     * @param Request $request
+     *
+     * @return Response
+     */
     public function addWordsAction(Request $request)
     {
-        //todo check rights
-        //todo: error when trying to save empty translation
         $wordsForm = $this->createForm(WordsListFormType::class);
 
         $wordsForm->submit($request->request->all());
@@ -69,9 +81,16 @@ class RestController extends FOSRestController
         return $this->handleView($this->view($wordsList, Codes::HTTP_CREATED));
     }
 
+    /**
+     * @param Request $request
+     * @param $id
+     *
+     * @return Response
+     *
+     * @throws ApiException
+     */
     public function editWordsAction(Request $request, $id)
     {
-        //todo check rights
         $wordsList = $this->wordsListRepository->find($id);
 
         if ($wordsList === null) {
@@ -94,10 +113,15 @@ class RestController extends FOSRestController
         return $this->handleView($this->view($wordsList, Codes::HTTP_OK));
     }
 
+    /**
+     * @param $id
+     *
+     * @return Response
+     *
+     * @throws ApiException
+     */
     public function deleteWordsAction($id)
     {
-        //todo check rights
-        //todo: anotation on methods and variables
         /** @var WordsList $wordsList */
         $wordsList = $this->wordsListRepository->find($id);
 

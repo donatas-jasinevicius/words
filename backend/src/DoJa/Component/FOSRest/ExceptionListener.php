@@ -10,6 +10,9 @@ use Symfony\Component\HttpKernel\KernelEvents;
 
 class ExceptionListener implements EventSubscriberInterface
 {
+    /**
+     * @param GetResponseForExceptionEvent $event
+     */
     public function onKernelException(GetResponseForExceptionEvent $event)
     {
         $exception = $event->getException();
@@ -29,6 +32,9 @@ class ExceptionListener implements EventSubscriberInterface
         $event->setResponse(new JsonResponse($responseData));
     }
 
+    /**
+     *  {@inheritdoc}
+     */
     public static function getSubscribedEvents()
     {
         return array(

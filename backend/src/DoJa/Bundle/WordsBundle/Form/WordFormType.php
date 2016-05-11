@@ -9,6 +9,9 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class WordFormType extends AbstractType
 {
+    /**
+     * {@inheritdoc}
+     */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('id');
@@ -21,6 +24,9 @@ class WordFormType extends AbstractType
         ));
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(

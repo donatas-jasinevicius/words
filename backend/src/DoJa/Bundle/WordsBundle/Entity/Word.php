@@ -28,7 +28,6 @@ class Word
 
     /**
      * @var Translation[]
-     * @Assert\Valid()
      * @JMS\Groups({"all"})
      */
     protected $translations;

@@ -6,6 +6,7 @@ use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityRepository;
 use DoJa\Component\FOSRest\Exception\ApiException;
 use FOS\RestBundle\Controller\FOSRestController;
+use JMS\Serializer\SerializationContext;
 use JMS\Serializer\Serializer;
 use Symfony\Component\HttpFoundation\Request;
 use DoJa\Bundle\WordsBundle\Entity\WordsList;
@@ -42,8 +43,7 @@ class RestController extends FOSRestController
     }
 
     /**
-     * @Rest\View(serializerGroups={"main", "Default"})
-     *
+     * todo: implement filter param
      * @param $id
      *
      * @return WordsListResults
@@ -52,32 +52,32 @@ class RestController extends FOSRestController
      */
     public function getWordsListResultsAction($id)
     {
-        //todo: implement filter
-        //todo check rights
-        //todo: move to service?
         /** @var WordsList $wordsList */
         $wordsList = $this->wordsListRepository->find($id);
 
         if ($wordsList === null) {
             throw new ApiException(ApiException::NOT_FOUND);
         }
-        $wordsResult = $this->wordResultRepository->findByWords($wordsList->getWords());
+        $wordsResults = $this->wordResultRepository->findByWords($wordsList->getWords());
 
-        $wordsListResult = new WordsListResults();
-        $wordsListResult->setWordsList($wordsList);
-        $wordsListResult->setWordsResults($wordsResult);
+        $wordsListResults = new WordsListResults();
+        $wordsListResults->setWordsList($wordsList);
+        $wordsListResults->setWordsResults($wordsResults);
 
-        return $wordsListResult;
+        return $this->handleView(
+            $this
+                ->view($wordsListResults)
+                ->setSerializationContext(SerializationContext::create()->setGroups(array('main', 'Default')))
+        );
     }
 
     /**
-     * @Rest\View(serializerGroups={"main", "Default"})
+     * @param Request $request
      *
      * @return WordsListResults
      */
     public function addWordsListResultsAction(Request $request)
     {
-        //todo check rights
         $wordsForm = $this->createForm(WordsListResultsFormType::class);
 
         $wordsForm->submit($request->request->all());
@@ -91,6 +91,11 @@ class RestController extends FOSRestController
 
         $this->entityManager->flush();
 
-        return $wordsListResults;
+
+        return $this->handleView(
+            $this
+                ->view($wordsListResults)
+                ->setSerializationContext(SerializationContext::create()->setGroups(array('main', 'Default')))
+        );
     }
 }

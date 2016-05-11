@@ -23,19 +23,7 @@
             return response;
         }
 
-        function requestError(response) {
-            if(requestCount) {
-                requestCount--;
-
-                if(!requestCount) {
-                    NProgress.done();
-                }
-            }
-
-            return $q.reject(response);
-        }
-
-        function responseError(response) {
+        function error(response) {
             if(requestCount) {
                 requestCount--;
 
@@ -49,9 +37,9 @@
 
         return {
             'request': request,
-            'requestError': requestError,
             'response': response,
-            'responseError': responseError
+            'requestError': error,
+            'responseError': error
         };
     }]);
 }());

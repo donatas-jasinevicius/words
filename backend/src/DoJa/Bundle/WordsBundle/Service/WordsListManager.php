@@ -15,6 +15,11 @@ class WordsListManager
         $this->entityManager = $entityManager;
     }
 
+    /**
+     * @param WordsList $wordsList
+     *
+     * @return WordsList
+     */
     public function saveWordsList(WordsList $wordsList)
     {
         $this->entityManager->persist($wordsList);
@@ -22,6 +27,11 @@ class WordsListManager
         return $wordsList;
     }
 
+    /**
+     * @param WordsList $wordsList
+     *
+     * @return WordsList
+     */
     public function deleteWordsList(WordsList $wordsList)
     {
         $this->entityManager->remove($wordsList);

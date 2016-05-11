@@ -2,6 +2,7 @@
 
 namespace DoJa\Bundle\WordsStatisticsBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use DoJa\Bundle\WordsBundle\Entity\WordsList;
 
 class WordsListResults
@@ -15,6 +16,11 @@ class WordsListResults
      * @var WordResult[]
      */
     protected $wordsResults;
+
+    public function __construct()
+    {
+        $this->wordsResults = new ArrayCollection();
+    }
 
     /**
      * @return WordsList

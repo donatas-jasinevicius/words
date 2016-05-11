@@ -15,16 +15,13 @@ class WordsList
     protected $id;
 
     /**
-     * todo: move to xml
      * @var string
-     * @Assert\NotBlank()
      * @JMS\Groups({"all"})
      */
     protected $name;
 
     /**
      * @var Word[]
-     * @Assert\Valid()
      * @JMS\Groups({"all"})
      */
     protected $words;

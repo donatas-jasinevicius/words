@@ -8,12 +8,18 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class TranslationFormType extends AbstractType
 {
+    /**
+     * {@inheritdoc}
+     */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('id');
         $builder->add('translation');
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(

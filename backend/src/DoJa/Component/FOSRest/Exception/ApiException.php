@@ -23,6 +23,11 @@ class ApiException extends \Exception implements HttpExceptionInterface
     ];
     private $errorCode;
 
+    /**
+     * @param string $errorCode
+     * @param string $message
+     * @param \Exception|null $previous
+     */
     public function __construct($errorCode, $message = "", \Exception $previous = null)
     {
         parent::__construct($message, $this->errorCodesMap[$errorCode], $previous);

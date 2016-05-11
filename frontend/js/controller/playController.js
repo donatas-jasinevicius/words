@@ -2,7 +2,6 @@
     angular.module('words')
         .controller('playController', ['$scope', 'wordsStatisticsClient', 'wordsList', '$location', 'resultsStorage',
         function($scope, wordsStatisticsClient, wordsList, $location, resultsStorage) {
-            //todo: implement different learning strategies
             var init = function () {
                 $scope.words = wordsList.words;
                 $scope.totalWords = $scope.words.length;
@@ -46,7 +45,6 @@
             var getWord = function () {//todo: move to service
                 if ($scope.words.length == 0) {
                     if ($scope.failedWords.length == 0) {
-                        //todo: shows empty word, while trying to load
                         wordsStatisticsClient.saveWordsListResults(wordsList.id, resultsStorage.getWordsListResults())
                         .success(function () {
                             $location.path( "/results" );
@@ -60,8 +58,6 @@
                 var index = Math.round(Math.random() * ($scope.words.length - 1));
                 var word = $scope.words[index];
                 $scope.words.splice(index, 1);
-
-                console.log(word);
 
                 return word;
             };

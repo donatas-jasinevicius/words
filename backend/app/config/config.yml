@@ -72,9 +72,6 @@ swiftmailer:
     spool:     { type: memory }
 
 fos_rest:
-    view:
-#    todo: ar reikalingas
-        view_response_listener: true
     exception:
         enabled: true
     service:

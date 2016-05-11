@@ -2,8 +2,6 @@
 
 namespace DoJa\Bundle\WordsBundle\Entity;
 
-use Symfony\Component\Validator\Constraints as Assert;
-
 class Translation
 {
     /**
@@ -11,7 +9,6 @@ class Translation
      */
     protected $id;
 
-    //todo: sudet validacija visur
     /**
      * @var Word
      */
@@ -19,7 +16,6 @@ class Translation
 
     /**
      * @var string
-     * @Assert\NotBlank()
      */
     protected $translation;
 

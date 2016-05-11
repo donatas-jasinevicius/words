@@ -5,9 +5,6 @@ namespace Application\Migrations;
 use Doctrine\DBAL\Migrations\AbstractMigration;
 use Doctrine\DBAL\Schema\Schema;
 
-/**
- * Auto-generated Migration: Please modify to your needs!
- */
 class Version20160403150217 extends AbstractMigration
 {
     /**
@@ -31,9 +28,7 @@ class Version20160403150217 extends AbstractMigration
      */
     public function down(Schema $schema)
     {
-        $this->abortIf($this->connection->getDatabasePlatform()->getName() != "mysql", "Migration can only be executed safely on 'mysql'.");
-
-        //todo: write down migrations
+        $this->throwIrreversibleMigrationException('Irreversible migration');
 
     }
 }

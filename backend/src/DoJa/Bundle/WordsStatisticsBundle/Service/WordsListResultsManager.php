@@ -15,6 +15,11 @@ class WordsListResultsManager
         $this->entityManager = $entityManager;
     }
 
+    /**
+     * @param WordsListResults $wordsListResults
+     *
+     * @return WordsListResults
+     */
     public function saveWordsList(WordsListResults $wordsListResults)
     {
         foreach ($wordsListResults->getWordsResults() as $wordResult) {

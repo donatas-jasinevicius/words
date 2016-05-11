@@ -13,7 +13,6 @@
                     scope.loading = true;
 
                     wordsStatisticsClient.getWordsListResults(scope.wordsListId).success(function (wordsListResults) {
-                        console.log(wordsListResults);
                         angular.forEach(wordsListResults.words_results, function(wordResult) {
                             scope.correctCount += wordResult.correct_count;
                             scope.incorrectCount += wordResult.incorrect_count;
