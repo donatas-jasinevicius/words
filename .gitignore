@@ -4,10 +4,10 @@
 /backend/var/*
 !/backend/var/cache
 /backend/var/cache/*
-!/backendvar/cache/.gitkeep
+!/backend/var/cache/.gitkeep
 !/backend/var/logs
 /backend/var/logs/*
-!/backendvar/logs/.gitkeep
+!/backend/var/logs/.gitkeep
 !/backend/var/sessions
 /backend/var/sessions/*
 !/backend/var/sessions/.gitkeep
