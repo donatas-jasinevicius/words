@@ -1,0 +1,23 @@
+<constraint-mapping xmlns="http://symfony.com/schema/dic/constraint-mapping"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://symfony.com/schema/dic/constraint-mapping http://symfony.com/schema/dic/constraint-mapping/constraint-mapping-1.0.xsd">
+
+    <class name="DoJa\Bundle\WordsStatisticsBundle\Entity\WordResult">
+        <property name="correctCount">
+            <constraint name="Type">
+                <option name="type">integer</option>
+            </constraint>
+        </property>
+        <property name="incorrectCount">
+            <constraint name="Type">
+                <option name="type">integer</option>
+            </constraint>
+        </property>
+    </class>
+
+    <class name="DoJa\Bundle\WordsStatisticsBundle\Entity\WordsListResults">
+        <property name="wordsResults">
+            <constraint name="Valid" />
+        </property>
+    </class>
+</constraint-mapping>

@@ -1,0 +1,28 @@
+<constraint-mapping xmlns="http://symfony.com/schema/dic/constraint-mapping"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://symfony.com/schema/dic/constraint-mapping http://symfony.com/schema/dic/constraint-mapping/constraint-mapping-1.0.xsd">
+
+    <class name="DoJa\Bundle\WordsBundle\Entity\Translation">
+        <property name="translation">
+            <constraint name="NotBlank" />
+        </property>
+    </class>
+
+    <class name="DoJa\Bundle\WordsBundle\Entity\Word">
+        <property name="original">
+            <constraint name="NotBlank" />
+        </property>
+        <property name="translations">
+            <constraint name="Valid" />
+        </property>
+    </class>
+
+    <class name="DoJa\Bundle\WordsBundle\Entity\WordsList">
+        <property name="name">
+            <constraint name="NotBlank" />
+        </property>
+        <property name="words">
+            <constraint name="Valid" />
+        </property>
+    </class>
+</constraint-mapping>
