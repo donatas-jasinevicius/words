@@ -14,3 +14,4 @@
 !/backendvar/SymfonyRequirements.php
 /backend/vendor/
 /backend/web/bundles/
+/backend/web/.htaccess
