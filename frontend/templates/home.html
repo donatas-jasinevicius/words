@@ -1,0 +1,32 @@
+<div>
+    <div class="row">
+        <div class="col-sm-6">
+            <a href="#/add" class="btn btn-primary btn-lg">Add new</a>
+            <br />
+            <br />
+            <table class="table table-bordered">
+                <tr>
+                    <th>Play</th>
+                    <th>Name</th>
+                    <th>Words Count</th>
+                    <th>Statistics</th>
+                    <th>Actions</th>
+                </tr>
+                <tr data-ng-repeat="wordsList in wordsLists track by $index">
+                    <td><a href="#/play/{{ wordsList.id }}" class="btn btn-primary">Start</a></td>
+                    <td>{{ wordsList.name }}</td>
+                    <td>{{ wordsList.words.length }}</td>
+                    <td>
+                        <words-list-results data-words-list-id="wordsList.id"/>
+                    </td>
+                    <td>
+                        <a href="#/edit/{{ wordsList.id }}" class="btn btn-primary btn-sm">Edit</a>
+                        <a data-ng-click="delete(wordsList.id)" class="btn btn-primary btn-sm">Delete</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div id="audioholder"></div>

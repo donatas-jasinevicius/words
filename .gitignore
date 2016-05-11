@@ -1,0 +1,16 @@
+/backend/app/config/parameters.yml
+/backend/build/
+/backend/phpunit.xml
+/backend/var/*
+!/backend/var/cache
+/backend/var/cache/*
+!/backendvar/cache/.gitkeep
+!/backend/var/logs
+/backend/var/logs/*
+!/backendvar/logs/.gitkeep
+!/backend/var/sessions
+/backend/var/sessions/*
+!/backendvar/sessions/.gitkeep
+!/backendvar/SymfonyRequirements.php
+/backend/vendor/
+/backend/web/bundles/

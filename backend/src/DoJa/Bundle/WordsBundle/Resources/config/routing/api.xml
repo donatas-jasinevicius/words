@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<routes xmlns="http://symfony.com/schema/routing"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <route id="words_get_words_lists" path="/words" methods="GET">
+        <default key="_controller">words.controller.rest:getAllWordsAction</default>
+    </route>
+
+    <route id="words_get_words_list" path="/words/{id}" methods="GET">
+        <default key="_controller">words.controller.rest:getWordsAction</default>
+        <requirement key="id">\d+</requirement>
+    </route>
+
+    <route id="words_add_words_list" path="/words" methods="POST">
+        <default key="_controller">words.controller.rest:addWordsAction</default>
+    </route>
+
+    <route id="words_edit_words_list" path="/words/{id}" methods="PUT">
+        <default key="_controller">words.controller.rest:editWordsAction</default>
+        <requirement key="id">\d+</requirement>
+    </route>
+
+    <route id="words_delete_words_list" path="/words/{id}" methods="DELETE">
+        <default key="_controller">words.controller.rest:deleteWordsAction</default>
+        <requirement key="id">\d+</requirement>
+    </route>
+</routes>

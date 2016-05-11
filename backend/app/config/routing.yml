@@ -1,0 +1,8 @@
+words_statistics:
+    resource: "@WordsStatisticsBundle/Resources/config/routing.xml"
+    prefix:   /
+
+words:
+    resource: "@WordsBundle/Resources/config/routing.xml"
+    prefix:   /
+

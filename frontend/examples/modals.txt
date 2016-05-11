@@ -1,0 +1,206 @@
+Abide-Abode/Abided-Abode/Abided/Abidden;tvirtai laikytis
+Alight-Alit/Alighted-Alit/Alighted;nutūpti
+Arise-Arose-Arisen;pasirodyti;iškilti
+Awake-Awoke-Awoken;pabusti;žadint
+Be-Was/Were-Been;būti
+Bear-Bore-Born/Borne;nešti;pakelti
+Beat-Beat-Beaten;mušti
+Become-Became-Become;tapti;pavirsti
+Begin-Began-Begun;prasidėti
+Behold-Beheld-Beheld;regėti (kažką ypatingo)
+Bend-Bent-Bent;lenkti;riesti
+Bet-Bet-Bet;kirsti lažybų;lažintis
+Bid-Bade-Bidden;pratarti (žodį);duoti komandą
+Bid-Bid-Bid;siūlyti kainą
+Bind-Bound-Bound;rišti
+Bite-Bit-Bitten;kąsti
+Bleed-Bled-Bled;kraujuoti
+Blow-Blew-Blown;(pa)pūsti
+Break-Broke-Broken;laužyti;laužti
+Breed-Bred-Bred;veisti(s)
+Bring-Brought-Brought;atnešti;atvesti;atvežti
+Broadcast-Broadcast/Broadcasted-Broadcast/Broadcasted;transliuoti
+Build-Built-Built;statyti
+Burn-Burnt/Burned-Burnt/Burned;(ap)degti;deginti
+Burst-Burst-Burst;trūkti;sprogti
+Bust-Bust-Bust;bankrutuoti
+Buy-Bought-Bought;pirkti
+Cast-Cast-Cast;mesti
+Catch-Caught-Caught;gaudyti;sugauti
+Choose-Chose-Chosen;(pasi)rinkti
+Clap-Clapped/Clapt-Clapped/Clapt;ploti
+Cling-Clung-Clung;kibti;kabintis
+Clothe-Clad/Clothed-Clad/Clothed;apsirengti
+Come-Came-Come;ateiti;atvykti;atvažiuoti
+Cost-Cost-Cost;kainuoti
+Creep-Crept-Crept;šliaužti;sėlinti
+Cut-Cut-Cut;pjauti;kirsti
+Dare-Dared/Durst-Dared;išdrįsti
+Deal-Dealt-Dealt;turėti reikalų
+Dig-Dug-Dug;kasti
+Dive-Dived/Dove-Dived;nardyti
+Do-Did-Done;daryti,veikti
+Draw-Drew-Drawn;traukti;piešti
+Dream-Dreamt/Dreamed-Dreamt/Dreamed;sapnuoti;svajoti
+Drink-Drank-Drunk;gerti
+Drive-Drove-Driven;varyti;vairuoti
+Dwell-Dwelt-Dwelt;gyventi
+Eat-Ate-Eaten;valgyti
+Fall-Fell-Fallen;kristi
+Feed-Fed-Fed;maitinti;šerti
+Feel-Felt-Felt;jausti(s)
+Fight-Fought-Fought;kovoti;kariauti
+Find-Found-Found;rasti
+Fit-Fit/Fitted-Fit/Fitted;atitikti;pritaikyti
+Flee-Fled-Fled;pabėgti
+Fling-Flung-Flung;mesti;sviesti
+Fly-Flew-Flown;skrsit;lėkti
+Forbid-Forbade/Forbad-Forbidden;(už)drausti
+Forecast-Forecast/Forecasted-Forecast/Forecasted;išpranašauti
+Foresee-Foresaw-Foreseen;numatyti;nuspėti
+Foretell-Foretold-Foretold;išpranašauti;išburti
+Forget-Forgot-Forgotten;užmiršti
+Forgive-Forgave-Forgiven;atleisti
+Forsake-Forsook-Forsaken;atsisakyti
+Freeze-Froze-Frozen;(už)šalti
+Frostbite-Frostbit-Frostbitten;našalti
+Get-Got-Got/Gotten;gauti;pasiekti
+Give-Gave-Given;duoti
+Go-Went-Gone/Been;eiti;važiuoti
+Grind-Ground-Ground;malti
+Grow-Grew-Grown;aug(in)ti;tapti
+Hang-Hung/Hanged-Hung/Hanged;kabėti;kabintis
+Have-Had-Had;turėti
+Hear-Heard-Heard;girdėti
+Hide-Hid-Hidden;slėpti(s)
+Hit-Hit-Hit;smogti;pataikyti
+Hold-Held-Held;laikyti(s)
+Hurt-Hurt-Hurt;sužeisti;(į)skaudinti
+Inlay-Inlaid-Inlaid;dėti puzzle
+Input-Input/Inputted-Input/Inputted;įvesti informaciją
+Interlay-Interlaid-Interlaid;guleti tarp kažko
+Keep-Kept-Kept;laikyti;saugoti
+Kneel-Knelt/Kneeled-Knelt/Kneeled;kalupti(s);klūpoti
+Knit-Knit/Knitted-Knit/Knitted;megzti
+Know-Knew-Known;žinoti
+Lay-Laid-Laid;dėti;guldyti
+Lead-Led-Led;vesti;vadovauti
+Lean-Leant/Leaned-Leant/Leaned;atsiremti;palinkti
+Leap-Leapt/Leaped-Leapt/Leaped;šokti;šokinėti
+Learn-Learnt/Learned-Learnt/Learned;mokytis;žinoti
+Leave-Left-Left;palikti;iškeliauti
+Lend-Lent-Lent;(pas)skolinti
+Let-Let-Let;leisti
+Lie-Lay-Lain;gulėti
+Light-Lit-Lit;užsidegti;apšviesti
+Lose-Lost-Lost;pamesti;prarasti
+Make-Made-Made;daryti;gaminti
+Mean-Meant-Meant;turėti galvoje;reikšti
+Meet-Met-Met;su(si)tikti
+Melt-Melted-Molten/Melted;lyfyti;išlyditi
+Mislead-Misled-Misled;suklaidinti
+Mistake-Mistook-Mistaken;suklysti
+Misunderstand-Misunderstood-Misunderstood;nesuprasti;neteisingai suprasti
+Mow-Mowed-Mown;pjauti žolę,šienauti
+Overdraw-Overdrew-Overdrawn;perdėti;pereikvoti;viršyti savo kreditą banke
+Overhear-Overheard-Overheard;nugirsti
+Overtake-Overtook-Overtaken;pasivyti;užklupti
+Pay-Paid-Paid;mokėti
+Preset-Preset-Preset;nustatyi prieš naudojant
+Prove-Proved-Proven/Proved;įrodyti
+Put-Put-Put;dėti
+Quit-Quit-Quit;mesti;palikti;išeiti
+Re-prove-Re-proved-Re-proven/Re-proved;prikaišioti;barti
+Read-Read-Read;skaityti
+Rid-Rid/Ridded-Rid/Ridded;atsikratyti
+Ride-Rode-Ridden;joti;važiuoti
+Ring-Rang-Rung;skambinti;skambėti
+Rise-Rose-Risen;keltis;kilti
+Rive-Rived-Riven/Rived;split or tear apart violently
+Run-Ran-Run;bėgti
+Saw-Sawed-Sawn/Sawed;pjauti
+Say-Said-Said;sakyti
+See-Saw-Seen;matyti
+Seek-Sought-Sought;ieškoti
+Sell-Sold-Sold;parduoti;prekiauti
+Send-Sent-Sent;siųsti
+Set-Set-Set;(nu)statyti;leistis (apie saulę)
+Sew-Sewed-Sewn/Sewed;siūti
+Shake-Shook-Shaken;kratyti;drebėti
+Shave-Shaved-Shaven/Shaved;skustis (barzda)
+Shear-Shore/Sheared-Shorn/Sheared;kirpti;nukirpti
+Shed-Shed-Shed;lieti kraują, ašaras
+Shine-Shone-Shone;šviesti,blizgėti
+Shoe-Shod-Shod;kaustyti;apauti
+Shoot-Shot-Shot;šauti;šaudyti
+Show-Showed-Shown;rodyti
+Shrink-Shrank-Shrunk;susitraukti;sumažėti
+Shut-Shut-Shut;uždaryti
+Sing-Sang-Sung;dainuoti
+Sink-Sank-Sunk;skėsti;grimzti
+Sit-Sat-Sat;sėdėti
+Slay-Slew-Slain;užmušti;nugalabyti
+Sleep-Slept-Slept;miegoti
+Slide-Slid-Slid/Slidden;slysti;slidinėti
+Slink-Slunk-Slunk;sėlinti
+Slit-Slit-Slit;prapjauti;prarėžti
+Smell-Smelt/Smelled-Smelt/Smelled;kvepėti;uostyti
+Sneak-Sneaked/Snuck-Sneaked/Snuck;sėlinti
+Soothsay-Soothsaid-Soothsaid;pranašauti
+Sow-Sowed-Sown;sėti
+Speak-Spoke-Spoken;kalbėti
+Speed-Sped/Speeded-Sped/Speeded;greitai judėti
+Spell-Spelt/Spelled-Spelt/Spelled;sakyti;rašyti paraidžiui
+Spend-Spent-Spent;leisti; (iš)eikvoti
+Spill-Spilt/Spilled-Spilt/Spilled;(iš)pilti
+Spin-Span/Spun-Spun;verpti;suktis
+Spit-Spat/Spit-Spat/Spit;spjauti;spjaudyti
+Split-Split-Split;skilti;skaldyti(s)
+Spoil-Spoilt/Spoiled-Spoilt/Spoiled;(su)gadinti
+Spread-Spread-Spread;skilti;skleisti(s)
+Spring-Sprang-Sprung;(pa)šokti
+Stand-Stood-Stood;atsistoti;stovėti
+Steal-Stole-Stolen;vogti;sėlinti
+Stick-Stuck-Stuck;priklijuoti;lipti;įkišti
+Sting-Stung-Stung;(į)gelti
+Stink-Stank-Stunk;smirdėti;dvokti
+Stride-Strode/Strided-Stridden;žingsniuoti
+Strike-Struck-Struck/Stricken;smogti;mušti
+String-Strung-Strung;hang (something) so that it stretches in a long line.
+Strip-Stript/Stripped-Stript/Stripped;nuplėšti;nulupti
+Strive-Strove-Striven;siekti;stengtis
+Sublet-Sublet-Sublet;pernuomoti
+Swear-Swore-Sworn;keiktis;prisiekti
+Sweat-Sweat/Sweated-Sweat/Sweated;prakaitas...
+Sweep-Swept/Sweeped-Swept/Sweeped;šluoti
+Swell-Swelled-Swollen;(iš)trinti
+Swim-Swam-Swum;plaukti
+Swing-Swung-Swung;suptis
+Take-Took-Taken;imti
+Teach-Taught-Taught;mokyti
+Tear-Tore-Torn;plėšti;plėšyti
+Tell-Told-Told;sakyti;pasakoti;liepti
+Think-Thought-Thought;galvoti;manyti
+Thrive-Throve/Thrived-Thriven/Thrived;klestėti;vešliai augti
+Throw-Threw-Thrown;mesti
+Thrust-Thrust-Thrust;stumti
+Tread-Trod-Trodden;žengti;minti
+Undergo-Underwent-Undergone;patirti;iškęsti
+Understand-Understood-Understood;suprasti
+Undertake-Undertook-Undertaken;įsipareigoti
+Upset-Upset-Upset;make (someone) unhappy, disappointed, or worried.
+Vex-Vext/Vexed-Vext/Vexed;apmaudauti
+Wake-Woke-Woken;pabusti;žadinti
+Wear-Wore-Worn;dėvėti;vilkėti
+Weave-Wove-Woven;austi
+Wed-Wed/Wedded-Wed/Wedded;sutuokti
+Weep-Wept-Wept;raudoti
+Wend-Wended/Went-Wended/Went;go in a specified direction, typically slowly or by an indirect route
+Wet-Wet/Wetted-Wet/Wetted;šlapinti;drėkinti
+Win-Won-Won;išloši;laimėti
+Wind-Wound-Wound;sukti(s),prisukti
+Withdraw-Withdrew-Withdrawn;atsiimti;išimti
+Withhold-Withheld-Withheld;sulaikyti
+Withstand-Withstood-Withstood;atlaikyti;atsilaikyti
+Wring-Wrung-Wrung;gręžti
+Write-Wrote-Written;rašyti

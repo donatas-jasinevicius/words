@@ -1,0 +1,55 @@
+<div class="row text-center results-container">
+    <div class="col-sm-12">
+        <div>
+            <div class="row stats">
+                <div class="col-sm-4">
+                    Correct: <strong>{{ correctCount }}</strong>
+                </div>
+                <div class="col-sm-4">
+                    Incorrect: <strong>{{ failedWordsCount }}</strong>
+                </div>
+                <div class="col-sm-4">
+                    Percent: <strong>{{ correctPercent }}</strong>
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <tr>
+                    <th>Failed times</th>
+                    <th>Word</th>
+                    <th>Translations</th>
+                </tr>
+                <tr data-ng-class="{danger: word.count > 2}" data-ng-repeat="wordResult in wordsListResults.words_results | orderBy: 'count' track by $index">
+                    <td>
+                        <strong>{{ wordResult.correct_count }} - {{ wordResult.incorrect_count }}</strong>
+                    </td>
+                    <td>
+                        <strong>{{ wordResult.word.original }}</strong>
+                    </td>
+                    <td>
+                        <div data-ng-repeat="translation in wordResult.word.translations track by $index">
+                            <span data-ng-show="!$last">
+                                {{ translation.translation }},
+                            </span>
+                            <span data-ng-show="$last">
+                                {{ translation.translation }}
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div data-ng-show="failedWords.length == 0" class="alert alert-success" role="alert">
+            <strong>Well done!</strong>
+            You made no mistakes.
+        </div>
+    </div>
+    <div class="col-sm-12 buttons">
+        <a href="#/play/{{ wordsListResults.words_list.id }}" class="btn btn-primary btn-lg">
+            Play again
+        </a>
+
+        <a href="#/" class="btn btn-primary btn-lg">
+            Choose new words
+        </a>
+    </div>
+</div>

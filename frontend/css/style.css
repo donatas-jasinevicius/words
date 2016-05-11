@@ -1,0 +1,55 @@
+body {
+    margin-top: 50px;
+}
+
+.hand {
+    cursor: pointer;
+}
+
+.add-container .buttons {
+    margin-top: 15px;
+}
+
+.results-container .stats {
+    margin-bottom: 30px;
+}
+
+.results-container .buttons {
+    margin-top: 20px;
+}
+
+.play-container .stats {
+    margin-top: 30px;
+}
+
+.edit-translations {
+    margin-bottom: 7px;
+    position: relative;
+}
+
+.edit-translations .remove-word-icon {
+    left: -4px;
+    position: absolute;
+    top: -5px;
+}
+
+.edit-translations input {
+    width: 100px !important;
+}
+.translations {
+    position: relative;
+}
+
+.translations .remove-translation-icon {
+    position: absolute;
+    right: 0;
+    top: -12px;
+}
+
+.list-name {
+    margin-bottom: 15px;
+}
+
+.icon-medium {
+    font-size: 28px;
+}

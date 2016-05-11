@@ -1,0 +1,6 @@
+parameters:
+#    parameter_name: value
+
+services:
+    fos_rest_integration.exception_wrapper_handler:
+        class: DoJa\Component\FOSRest\ExceptionWrapperHandler

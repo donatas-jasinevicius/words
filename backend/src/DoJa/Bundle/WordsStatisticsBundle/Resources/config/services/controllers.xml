@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="words_statistics.controller.rest" class="DoJa\Bundle\WordsStatisticsBundle\Controller\RestController">
+            <argument type="service" id="words.manager.words_list" />
+            <argument type="service" id="words_statistics.manager.words_list_result" />
+            <argument type="service" id="words.repository.words_list" />
+            <argument type="service" id="words_statistics.repository.word_result" />
+            <argument type="service" id="jms_serializer.serializer" />
+            <argument type="service" id="doctrine.orm.default_entity_manager" />
+
+            <call method="setContainer">
+                <argument type="service" id="service_container" />
+            </call>
+        </service>
+    </services>
+</container>

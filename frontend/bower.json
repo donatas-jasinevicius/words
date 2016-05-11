@@ -1,0 +1,26 @@
+{
+  "name": "words",
+  "version": "0.1.0",
+  "authors": [
+    "donce96 <donatas.jasinevicius@gmail.com>"
+  ],
+  "description": "Application for repeating or learning new words",
+  "main": "js/app.js",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "nprogress": "~0.2.0",
+    "ngtoast": "~2.0.0",
+    "angular-route": "~1.5.5",
+    "angular-animate": "^1.5.5"
+  }
+}

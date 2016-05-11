@@ -1,0 +1,47 @@
+<div class="play-container">
+    <div class="row">
+        <div class="col-sm-3">
+            <h3 data-ng-repeat="translation in currentWord.translations track by $index">
+                {{ translation.translation }}
+            </h3>
+        </div>
+        <div class="col-sm-4">
+            <h3 data-ng-show="showingAnswer">
+                <i class="fa fa-volume-up hand" data-ng-click="spellWord()"></i>
+                {{ currentWord.original }}
+            </h3>
+
+        </div>
+        <div class="col-sm-5">
+
+            <button data-ng-show="!showingAnswer"
+                    data-ng-click="showAnswer()"
+                    class="btn btn-primary btn-lg">
+                Show answer!
+            </button>
+
+            <button data-ng-show="showingAnswer"
+                    data-ng-click="iKnewIt()"
+                    class="btn btn-primary btn-lg">
+                I Knew it!
+            </button>
+
+            <button data-ng-show="showingAnswer"
+                    data-ng-click="iWillKnowIt()"
+                    class="btn btn-primary btn-lg">
+                I will Know it
+            </button>
+        </div>
+    </div>
+    <div class="row stats">
+        <div class="col-sm-1 col-sm-offset-9">
+            <voice-control data-voice="voice"/>
+        </div>
+        <div class="col-sm-2 text-right">
+            Total words: {{ totalWords }}<br />
+            Words left: {{ words.length }}<br />
+            Failed words: {{ failedWords.length }}<br />
+        </div>
+    </div>
+</div>
+<!--todo: jungtis per fb, prie useriu skirtingi provideriai galimi-->

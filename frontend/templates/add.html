@@ -1,0 +1,49 @@
+<div class="add-container">
+    <div class="row list-name">
+        <div class="col-sm-12">
+            <label for="words-name">List name</label>
+            <input id="words-name" class="form-control" type="text" data-ng-model="wordsList.name" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <p>
+                Please submit words and translations separated by semicolon.<br />
+                Each line represents one word - first word is original and all fallowing is possible translations.
+            </p>
+            <textarea
+                    data-words-list-serialized
+                    data-ng-model="wordsList.words"
+                    data-use-deserializer="listId === null"
+                    data-ng-readonly="listId !== null"
+                    class="form-control"
+                    rows="12"
+                    cols="5">
+            </textarea>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-inline edit-translations" data-ng-repeat="word in wordsList.words track by $index">
+                <i data-ng-click="removeWord($index)" class="hand remove-word-icon fa fa-times"></i>
+                <input class="form-control" type="text" data-ng-model="word.original" /> -
+                <span class="translations" data-ng-repeat="translation in word.translations track by $index">
+                    <span data-ng-show="!$last">
+                        <input class="form-control" type="text" data-ng-model="word.translations[$index].translation" />
+                    </span>
+                    <span data-ng-show="$last">
+                        <input class="form-control" type="text" data-ng-model="word.translations[$index].translation" />
+                    </span>
+                    <i data-ng-click="removeTranslation($parent.$index, $index)" class="hand remove-translation-icon fa fa-times"></i>
+                </span>
+                <i class="fa fa-plus hand" data-ng-click="addTranslation($index)"></i>
+            </div>
+            <i class="fa fa-plus hand" data-ng-click="addWord()"></i>
+        </div>
+    </div>
+
+    <div class="row buttons">
+        <button data-ng-click="save()" class="btn btn-primary btn-lg">Save</button>
+        <a href="#/" class="btn btn-primary btn-lg">Cancel and back</a>
+    </div>
+</div>
+
+<div id="audioholder"></div>
