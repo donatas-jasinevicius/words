@@ -20,7 +20,7 @@ class Version20160403150217 extends AbstractMigration
         $this->addSql('ALTER TABLE words_words ADD CONSTRAINT FK_8181757699D5790 FOREIGN KEY (words_list_id) REFERENCES words_words_lists (id)');
         $this->addSql('ALTER TABLE words_translations ADD CONSTRAINT FK_6F28EB72E357438D FOREIGN KEY (word_id) REFERENCES words_words (id)');
         $this->addSql('CREATE TABLE words_statistics_word_results (id INT AUTO_INCREMENT NOT NULL, word_id INT NOT NULL, created_at DATETIME NOT NULL, correct_count INT NOT NULL, incorrect_count INT NOT NULL, INDEX IDX_77DCC488E357438D (word_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB');
-        $this->addSql('ALTER TABLE words_statistics_word_results ADD CONSTRAINT FK_77DCC488E357438D FOREIGN KEY (word_id) REFERENCES words_words (id);');
+        $this->addSql('ALTER TABLE words_statistics_word_results ADD CONSTRAINT FK_77DCC488E357438D FOREIGN KEY (word_id) REFERENCES words_words (id) ON DELETE CASCADE');
     }
 
     /**

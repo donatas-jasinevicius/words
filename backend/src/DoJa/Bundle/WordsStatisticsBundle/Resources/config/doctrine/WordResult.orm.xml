@@ -15,7 +15,7 @@
         <field name="incorrectCount" column="incorrect_count" type="integer" nullable="false" />
 
         <many-to-one field="word" target-entity="DoJa\Bundle\WordsBundle\Entity\Word">
-            <join-column nullable="false" name="word_id" referenced-column-name="id" />
+            <join-column nullable="false" name="word_id" referenced-column-name="id" on-delete="CASCADE" />
         </many-to-one>
     </entity>
 </doctrine-mapping>
